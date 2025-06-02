@@ -1,17 +1,12 @@
 # Randal Quinn – Cybersecurity Analyst Lab Portfolio
 
-![Security+](https://img.shields.io/badge/CompTIA-Security%2B-informational?style=flat&logo=compTIA&logoColor=white&color=orange)
-![Splunk](https://img.shields.io/badge/Splunk-User-blue?style=flat&logo=splunk&logoColor=white)
-![PowerShell](https://img.shields.io/badge/PowerShell-Scripting-blue?style=flat&logo=powershell)
-![Windows Server](https://img.shields.io/badge/Windows%20Server-2022-informational?style=flat&logo=windows&logoColor=white&color=blue)
-![Ubuntu](https://img.shields.io/badge/Linux-Ubuntu-informational?style=flat&logo=ubuntu&logoColor=white&color=orange)
-![VMware](https://img.shields.io/badge/VMware-Workstation-59666C?style=flat&logo=vmware&logoColor=white)
-![Azure AD](https://img.shields.io/badge/Microsoft-Azure%20AD-blue?style=flat&logo=microsoft-azure&logoColor=white)
-![OKTA](https://img.shields.io/badge/OKTA-MFA-blue?style=flat&logo=okta&logoColor=white)
-![Intune](https://img.shields.io/badge/Microsoft-Intune-blue?style=flat&logo=microsoft&logoColor=white)
-![SCCM](https://img.shields.io/badge/SCCM-ConfigMgr-blue?style=flat&logo=microsoft&logoColor=white)
-![ServiceNow](https://img.shields.io/badge/ServiceNow-Ticketing-lightgrey?style=flat&logo=servicenow&logoColor=white)
-
+<p align="center">
+  <img src="https://img.shields.io/badge/Splunk_Enterprise-008000?logo=splunk&logoColor=white&style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Configuration_Manager-FFA500?logo=microsoft&logoColor=white&style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Windows_Server_2022-0078D4?logo=windows&logoColor=white&style=for-the-badge" />
+  <img src="https://img.shields.io/badge/VMware_Workstation-607078?logo=vmware&logoColor=white&style=for-the-badge" />
+  <img src="https://img.shields.io/badge/PowerShell-012456?logo=powershell&logoColor=white&style=for-the-badge" />
+</p>
 
 This repository showcases my hands-on cybersecurity lab projects, incident response simulations, and Splunk analytics dashboards. The purpose is to demonstrate core competencies in enterprise security tools, data analysis, and threat response.
 
