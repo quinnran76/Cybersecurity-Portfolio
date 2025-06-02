@@ -52,6 +52,8 @@ This project simulates an enterprise deployment of Active Directory and SCCM on 
 - CMTrace Log Viewer
 ```
 
+
+
 ### 2. Splunk Fraud Detection Dashboard
 - Used Splunk Enterprise on Ubuntu to ingest and visualize financial transaction data
 - Created indexes and dashboards to identify fraud by age, gender, merchant, and category
