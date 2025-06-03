@@ -43,7 +43,7 @@ This project simulates an enterprise deployment of Active Directory and SCCM on 
 6. Verify deployment via Configuration Manager Console.
 
 ## Screenshot Examples Below
-![Logical Topology Diagram] ![AD OU Structure] ![AD Schema Extended]
+![Logical Topology Diagram] ![AD OU Structure] ![AD Schema Extended] ![GPO Management]
 ![SCCM Console]
 
 ## Tools Used
@@ -58,7 +58,12 @@ This project simulates an enterprise deployment of Active Directory and SCCM on 
 ![image alt](https://github.com/quinnran76/Cybersecurity-Portfolio/blob/734d74cd19a7e7e57d795a2808ff3971dd42b1c2/ActiveDirectory-SCCM/Screenshot%202025-05-26%20184750.png)
 
 ### AD Schema Extended
-![image alt](
+![image alt](https://github.com/quinnran76/Cybersecurity-Portfolio/blob/41cb09557db4884718b628ddbfe8f0ab33972c61/ActiveDirectory-SCCM/Screenshot%202025-06-03%20143000.png)
+
+### GPO Management
+![image alt](https://github.com/quinnran76/Cybersecurity-Portfolio/blob/6e90bd22bdb529e1fa32a2ebf749854a1a4f665e/ActiveDirectory-SCCM/Screenshot%202025-05-26%20190028.png)
+
+
 
 ### 2. Splunk Fraud Detection Dashboard
 - Used Splunk Enterprise on Ubuntu to ingest and visualize financial transaction data
