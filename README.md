@@ -45,7 +45,7 @@ This project simulates an enterprise deployment of Active Directory and SCCM on 
 ## Screenshot Examples Below
 ![Logical Topology Diagram] ![AD OU Structure] ![AD Schema Extended]
 ![GPO Management]![DNS Manager] ![DHCP Scope] ![VM's Joined Domain]
-![SCCM Console] ![SQL Server] ![SSRS] ![Deployment Verified] ![CMRace Log Viewer]
+![SCCM Console] ![SQL Server] ![SSRS] ![Deployment Verified] ![CMTRace Log Viewer]
 
 ## Tools Used
 - VMware Workstation 17 Pro
@@ -82,6 +82,18 @@ This project simulates an enterprise deployment of Active Directory and SCCM on 
 ![image alt](https://github.com/quinnran76/Cybersecurity-Portfolio/blob/de6485b5246e06cd83c9c98635ba598c0a85ae57/ActiveDirectory-SCCM/Screenshot%202025-05-26%20191350.md.png)
 
 ### SSRS
+![image alt](https://github.com/quinnran76/Cybersecurity-Portfolio/blob/734d74cd19a7e7e57d795a2808ff3971dd42b1c2/ActiveDirectory-SCCM/Screenshot%202025-05-26%20191454.png)
+
+### Deployment Verified
+![image alt](https://github.com/quinnran76/Cybersecurity-Portfolio/blob/29cc1fd713b828d939022db7b9161a95f3583d7e/ActiveDirectory-SCCM/Screenshot%202025-05-26%20191210.png)
+![image alt](https://github.com/quinnran76/Cybersecurity-Portfolio/blob/734d74cd19a7e7e57d795a2808ff3971dd42b1c2/ActiveDirectory-SCCM/Screenshot%202025-05-26%20193526.png)
+![image alt](https://github.com/quinnran76/Cybersecurity-Portfolio/blob/734d74cd19a7e7e57d795a2808ff3971dd42b1c2/ActiveDirectory-SCCM/Screenshot%202025-05-26%20192823.png)
+![image alt](https://github.com/quinnran76/Cybersecurity-Portfolio/blob/734d74cd19a7e7e57d795a2808ff3971dd42b1c2/ActiveDirectory-SCCM/Screenshot%202025-05-26%20192921.png)
+
+### CMTrace Log Viewer
+![image alt](
+![image alt](
+
 
 
 
