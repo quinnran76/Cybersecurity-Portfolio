@@ -43,7 +43,8 @@ This project simulates an enterprise deployment of Active Directory and SCCM on 
 6. Verify deployment via Configuration Manager Console.
 
 ## Screenshot Examples Below
-![Logical Topology Diagram] ![AD OU Structure] ![AD Schema Extended] ![GPO Management] ![DNS Manager] ![DHCP Scope] ![VM's Joined Domain]
+![Logical Topology Diagram] ![AD OU Structure] ![AD Schema Extended]
+![GPO Management]![DNS Manager] ![DHCP Scope] ![VM's Joined Domain]
 ![SCCM Console] ![SQL Server] ![SSRS] ![Deployment Verified] ![CMRace Log Viewer]
 
 ## Tools Used
@@ -75,6 +76,13 @@ This project simulates an enterprise deployment of Active Directory and SCCM on 
 
 ### SCCM - Configuration Manager Console
 ![image alt](https://github.com/quinnran76/Cybersecurity-Portfolio/blob/f790e934d81da5bafaf04970a6e0c2f4ce0fdf05/ActiveDirectory-SCCM/Screenshot%202025-05-26%20191004.png)
+
+### SQL Server
+![image alt](https://github.com/quinnran76/Cybersecurity-Portfolio/blob/de6485b5246e06cd83c9c98635ba598c0a85ae57/ActiveDirectory-SCCM/Screenshot%202025-05-26%20191310.md.png)
+![image alt](https://github.com/quinnran76/Cybersecurity-Portfolio/blob/de6485b5246e06cd83c9c98635ba598c0a85ae57/ActiveDirectory-SCCM/Screenshot%202025-05-26%20191350.md.png)
+
+### SSRS
+
 
 
 
