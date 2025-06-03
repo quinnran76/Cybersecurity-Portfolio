@@ -43,8 +43,8 @@ This project simulates an enterprise deployment of Active Directory and SCCM on 
 6. Verify deployment via Configuration Manager Console.
 
 ## Screenshot Examples Below
-![Logical Topology Diagram] ![AD OU Structure] ![AD Schema Extended] ![GPO Management]
-![SCCM Console]
+![Logical Topology Diagram] ![AD OU Structure] ![AD Schema Extended] ![GPO Management] ![DNS Manager] ![DHCP Scope] ![VM's Joined Domain]
+![SCCM Console] ![SQL Server] ![SSRS] ![Deployment Verified] ![CMRace Log Viewer]
 
 ## Tools Used
 - VMware Workstation 17 Pro
@@ -62,6 +62,19 @@ This project simulates an enterprise deployment of Active Directory and SCCM on 
 
 ### GPO Management
 ![image alt](https://github.com/quinnran76/Cybersecurity-Portfolio/blob/6e90bd22bdb529e1fa32a2ebf749854a1a4f665e/ActiveDirectory-SCCM/Screenshot%202025-05-26%20190028.png)
+
+### DNS Manager
+![image alt](https://github.com/quinnran76/Cybersecurity-Portfolio/blob/5f85c18c34bc8a210704046ee584f25d62fbb2c3/ActiveDirectory-SCCM/Screenshot%202025-05-26%20185914.png)
+
+### DHCP Scope
+![image alt](https://github.com/quinnran76/Cybersecurity-Portfolio/blob/5f85c18c34bc8a210704046ee584f25d62fbb2c3/ActiveDirectory-SCCM/Screenshot%202025-05-26%20185636.png)
+
+### VM's Joined to the Domain
+![image alt](https://github.com/quinnran76/Cybersecurity-Portfolio/blob/e9c62845e2f2dd164a181d0937384b42f8f3ceed/ActiveDirectory-SCCM/Screenshot%202025-06-03%20152510.png)
+![image alt](https://github.com/quinnran76/Cybersecurity-Portfolio/blob/e9c62845e2f2dd164a181d0937384b42f8f3ceed/ActiveDirectory-SCCM/Screenshot%202025-06-03%20152554.png)
+
+### SCCM - Configuration Manager Console
+![image alt](https://github.com/quinnran76/Cybersecurity-Portfolio/blob/f790e934d81da5bafaf04970a6e0c2f4ce0fdf05/ActiveDirectory-SCCM/Screenshot%202025-05-26%20191004.png)
 
 
 
