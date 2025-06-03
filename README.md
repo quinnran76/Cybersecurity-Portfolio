@@ -53,7 +53,7 @@ This project simulates an enterprise deployment of Active Directory and SCCM on 
 ```
 ## Active Directory + SCCM Lab Screenshots
 ### Logical Topology Diagram
-![image alt](https://github.com/quinnran76/Cybersecurity-Portfolio/blob/012c23112d77238c84fac03b6f61fab1aa347949/Diagrams/Screenshot%202025-06-02%20172826.png)
+![image alt](https://github.com/quinnran76/Cybersecurity-Portfolio/blob/8a0096d6e7097a186cb0a4896476a8875061f02d/Diagrams/Screenshot%202025-06-03%20163246.png)
 
 ### AD OU Structure
 ![image alt](https://github.com/quinnran76/Cybersecurity-Portfolio/blob/734d74cd19a7e7e57d795a2808ff3971dd42b1c2/ActiveDirectory-SCCM/Screenshot%202025-05-26%20184750.png)
