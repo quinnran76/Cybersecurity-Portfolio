@@ -42,19 +42,23 @@ This project simulates an enterprise deployment of Active Directory and SCCM on 
 5. Extend AD Schema and deploy clients.
 6. Verify deployment via Configuration Manager Console.
 
-## Screenshot Examples
-![AD OU Structure](images/ad-ou-structure.png)
-![image Alt](https://github.com/quinnran76/Cybersecurity-Portfolio/blob/ab3a0886e2b65106e6cbccb6190a8c1e035056b4/ActiveDirectory-SCCM/Screenshot%202025-05-26%20184750.md.png)
-
-![SCCM Console](images/sccm-console.png)
-
+## Screenshot Examples Below
+![Logical Topology Diagram] ![AD OU Structure] ![AD Schema Extended]
+![SCCM Console]
 
 ## Tools Used
 - VMware Workstation 17 Pro
 - CMTrace Log Viewer
 ```
+## Active Directory + SCCM Lab Screenshots
+### Logical Topology Diagram
+![image alt](https://github.com/quinnran76/Cybersecurity-Portfolio/blob/012c23112d77238c84fac03b6f61fab1aa347949/Diagrams/Screenshot%202025-06-02%20172826.png)
 
+### AD OU Structure
+![image alt](https://github.com/quinnran76/Cybersecurity-Portfolio/blob/734d74cd19a7e7e57d795a2808ff3971dd42b1c2/ActiveDirectory-SCCM/Screenshot%202025-05-26%20184750.png)
 
+### AD Schema Extended
+![image alt](
 
 ### 2. Splunk Fraud Detection Dashboard
 - Used Splunk Enterprise on Ubuntu to ingest and visualize financial transaction data
