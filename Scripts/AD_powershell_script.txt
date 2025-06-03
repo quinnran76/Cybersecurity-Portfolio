@@ -1,0 +1,102 @@
+# GI Joe Characters Active Directory User Creation Script
+# Requires Active Directory PowerShell Module
+
+# Import the Active Directory Module
+Import-Module ActiveDirectory
+
+# Define the base parameters for user creation
+$BaseDomain = "gi-joe.local"
+$BaseOU = "OU=Joes,DC=gi-joe,DC=local"
+$DefaultPassword = ConvertTo-SecureString "YoJoe!1980Secure!" -AsPlainText -Force
+
+# GI Joe Characters User Definitions
+$GIJoeUsers = @(
+    @{
+        FirstName = "Duke"
+        LastName = "Hauser"
+        Username = "duke.hauser"
+        Title = "First Sergeant, G.I. Joe Commander"
+        Department = "Military Operations"
+    },
+    @{
+        FirstName = "Scarlett"
+        LastName = "O'Hara"
+        Username = "scarlett.ohara"
+        Title = "Intelligence Officer"
+        Department = "Counterintelligence"
+    },
+    @{
+        FirstName = "Snake"
+        LastName = "Eyes"
+        Username = "snake.eyes"
+        Title = "Commando, Ninja Special Forces"
+        Department = "Special Operations"
+    },
+    @{
+        FirstName = "Flint"
+        LastName = "Faireborn"
+        Username = "flint.faireborn"
+        Title = "Warrant Officer, Tactical Field Commander"
+        Department = "Tactical Operations"
+    },
+    @{
+        FirstName = "Lady"
+        LastName = "Jaye"
+        Username = "lady.jaye"
+        Title = "Special Intelligence Specialist"
+        Department = "Intelligence"
+    },
+    @{
+        FirstName = "Beach"
+        LastName = "Head"
+        Username = "beach.head"
+        Title = "Marine Corps Drill Instructor"
+        Department = "Marine Operations"
+    },
+    @{
+        FirstName = "Road"
+        LastName = "Block"
+        Username = "road.block"
+        Title = "Heavy Machine Gunner"
+        Department = "Heavy Weapons"
+    }
+)
+
+# Function to create users
+function Create-GIJoeUser {
+    param (
+        [Parameter(Mandatory=$true)]
+        [hashtable]$UserDetails
+    )
+
+    $FullName = "$($UserDetails.FirstName) $($UserDetails.LastName)"
+    $Email = "$($UserDetails.Username)@$BaseDomain"
+
+    try {
+        New-ADUser `
+            -Name $FullName `
+            -GivenName $UserDetails.FirstName `
+            -Surname $UserDetails.LastName `
+            -UserPrincipalName $Email `
+            -SamAccountName $UserDetails.Username `
+            -EmailAddress $Email `
+            -Title $UserDetails.Title `
+            -Department $UserDetails.Department `
+            -AccountPassword $DefaultPassword `
+            -Path $BaseOU `
+            -Enabled $true `
+            -ChangePasswordAtLogon $true
+        
+        Write-Host "Created user: $FullName ($($UserDetails.Username))" -ForegroundColor Green
+    }
+    catch {
+        Write-Host "Failed to create user: $FullName. Error: $_" -ForegroundColor Red
+    }
+}
+
+# Create users
+foreach ($User in $GIJoeUsers) {
+    Create-GIJoeUser -UserDetails $User
+}
+
+Write-Host "GI Joe Active Directory User Creation Complete!" -ForegroundColor Cyan
