@@ -44,6 +44,8 @@ This project simulates an enterprise deployment of Active Directory and SCCM on 
 
 ## Screenshot Examples
 ![AD OU Structure](images/ad-ou-structure.png)
+![image Alt](https://github.com/quinnran76/Cybersecurity-Portfolio/blob/ab3a0886e2b65106e6cbccb6190a8c1e035056b4/ActiveDirectory-SCCM/Screenshot%202025-05-26%20184750.md.png)
+
 ![SCCM Console](images/sccm-console.png)
 
 
