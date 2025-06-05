@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ServiceNow Incident Form - INC0001234</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+        
+        .servicenow-header {
+            background: linear-gradient(135deg, #0066cc, #004499);
+            padding: 12px 20px;
+            color: white;
+            border-radius: 6px 6px 0 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .header-title {
+            font-size: 18px;
+            font-weight: 600;
+        }
+        
+        .header-actions {
+            display: flex;
+            gap: 10px;
+        }
+        
+        .btn {
+            padding: 6px 12px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 12px;
+            font-weight: 500;
+        }
+        
+        .btn-primary {
+            background-color: #0066cc;
+            color: white;
+        }
+        
+        .btn-secondary {
+            background-color: #6c757d;
+            color: white;
+        }
+        
+        .form-container {
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 0 0 6px 6px;
+            max-width: 1200px;
+            margin: 0 auto;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        
+        .form-section {
+            padding: 20px;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .form-section:last-child {
+            border-bottom: none;
+        }
+        
+        .section-title {
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: 15px;
+            color: #0066cc;
+            border-bottom: 2px solid #e0e0e0;
+            padding-bottom: 5px;
+        }
+        
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin-bottom: 15px;
+        }
+        
+        .form-group {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .form-group.full-width {
+            grid-column: 1 / -1;
+        }
+        
+        label {
+            font-weight: 500;
+            margin-bottom: 5px;
+            color: #555;
+        }
+        
+        input, select, textarea {
+            padding: 8px 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 14px;
+            background-color: white;
+        }
+        
+        input:focus, select:focus, textarea:focus {
+            outline: none;
+            border-color: #0066cc;
+            box-shadow: 0 0 0 2px rgba(0, 102, 204, 0.2);
+        }
+        
+        .readonly {
+            background-color: #f8f9fa;
+            color: #6c757d;
+        }
+        
+        textarea {
+            min-height: 100px;
+            resize: vertical;
+        }
+        
+        .status-badge {
+            display: inline-block;
+            padding: 4px 8px;
+            border-radius: 12px;
+            font-size: 12px;
+            font-weight: 500;
+            text-transform: uppercase;
+        }
+        
+        .status-new {
+            background-color: #e3f2fd;
+            color: #1976d2;
+        }
+        
+        .priority-high {
+            background-color: #ffebee;
+            color: #d32f2f;
+        }
+        
+        .attachment-section {
+            background-color: #f8f9fa;
+            padding: 15px;
+            border-radius: 4px;
+            margin-top: 10px;
+        }
+        
+        .attachment-item {
+            display: flex;
+            align-items: center;
+            padding: 8px;
+            background: white;
+            border: 1px solid #dee2e6;
+            border-radius: 4px;
+            margin-bottom: 8px;
+        }
+        
+        .attachment-icon {
+            width: 24px;
+            height: 24px;
+            margin-right: 10px;
+            background-color: #dc3545;
+            border-radius: 4px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 12px;
+            font-weight: bold;
+        }
+        
+        .work-notes {
+            background-color: #fff3cd;
+            border: 1px solid #ffeaa7;
+            border-radius: 4px;
+            padding: 12px;
+            margin-top: 10px;
+        }
+        
+        @media (max-width: 768px) {
+            .form-row {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <div class="servicenow-header">
+            <div class="header-title">Incident INC0001234 - Fraud Detection Dashboard Development</div>
+            <div class="header-actions">
+                <button class="btn btn-secondary">Save</button>
+                <button class="btn btn-primary">Update</button>
+            </div>
+        </div>
+        
+        <form>
+            <!-- Basic Information Section -->
+            <div class="form-section">
+                <div class="section-title">Incident Details</div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="incident-number">Incident Number</label>
+                        <input type="text" id="incident-number" value="INC0001234" class="readonly" readonly>
+                    </div>
+                    <div class="form-group">
+                        <label for="state">State</label>
+                        <select id="state">
+                            <option selected>New</option>
+                            <option>In Progress</option>
+                            <option>On Hold</option>
+                            <option>Resolved</option>
+                            <option>Closed</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="priority">Priority</label>
+                        <select id="priority">
+                            <option>1 - Critical</option>
+                            <option selected>2 - High</option>
+                            <option>3 - Moderate</option>
+                            <option>4 - Low</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="category">Category</label>
+                        <select id="category">
+                            <option selected>Cybersecurity - Fraud Detection</option>
+                            <option>Software</option>
+                            <option>Hardware</option>
+                            <option>Network</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="subcategory">Subcategory</label>
+                        <input type="text" id="subcategory" value="Data Analysis & Visualization">
+                    </div>
+                    <div class="form-group">
+                        <label for="urgency">Urgency</label>
+                        <select id="urgency">
+                            <option>1 - High</option>
+                            <option selected>2 - Medium</option>
+                            <option>3 - Low</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Assignment Section -->
+            <div class="form-section">
+                <div class="section-title">Assignment</div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="assigned-to">Assigned to</label>
+                        <input type="text" id="assigned-to" value="Randal - Cybersecurity Data Analyst">
+                    </div>
+                    <div class="form-group">
+                        <label for="assignment-group">Assignment Group</label>
+                        <input type="text" id="assignment-group" value="Cybersecurity Team">
+                    </div>
+                </div>
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="caller">Caller</label>
+                        <input type="text" id="caller" value="Commonwealth Bank Fraud Team">
+                    </div>
+                    <div class="form-group">
+                        <label for="company">Company</label>
+                        <input type="text" id="company" value="Commonwealth Bank">
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Description Section -->
+            <div class="form-section">
+                <div class="section-title">Description</div>
+                <div class="form-row">
+                    <div class="form-group full-width">
+                        <label for="short-description">Short Description</label>
+                        <input type="text" id="short-description" value="Development of Fraud Detection Dashboard using Splunk Enterprise for Transaction Monitoring">
+                    </div>
+                </div>
+                
+                <div class="form-row">
+                    <div class="form-group full-width">
+                        <label for="description">Description</label>
+                        <textarea id="description">As part of Commonwealth Bank's ongoing cybersecurity initiatives to combat the increasing rate and complexity of financial fraud, we require the development of a comprehensive fraud detection dashboard. This request stems from the critical need for effective defense solutions to protect our customers, employees, and institutional reputation while enhancing the resilience of our financial system.
+
+The Fraud team has provided a structured dataset containing payment transactions from various customers across different time periods and amounts. This data requires analysis and visualization to identify patterns and trends that can aid in fraud detection and prevention.</textarea>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Dates Section -->
+            <div class="form-section">
+                <div class="section-title">Dates & Timeline</div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="created">Created</label>
+                        <input type="datetime-local" id="created" value="2025-06-04T09:00" class="readonly" readonly>
+                    </div>
+                    <div class="form-group">
+                        <label for="due-date">Due Date</label>
+                        <input type="datetime-local" id="due-date" value="2025-06-18T17:00">
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Attachments Section -->
+            <div class="form-section">
+                <div class="section-title">Attachments</div>
+                <div class="attachment-section">
+                    <div class="attachment-item">
+                        <div class="attachment-icon">PDF</div>
+                        <div>
+                            <strong>Task 1_Data analysis_Dashboard.pdf</strong><br>
+                            <small>Uploaded: June 4, 2025 - 152 KB</small>
+                        </div>
+                    </div>
+                    <div class="attachment-item">
+                        <div class="attachment-icon">PDF</div>
+                        <div>
+                            <strong>Task Guide (2).pdf</strong><br>
+                            <small>Uploaded: June 4, 2025 - 89 KB</small>
+                        </div>
+                    </div>
+                    <div class="attachment-item">
+                        <div class="attachment-icon">CSV</div>
+                        <div>
+                            <strong>prepared_data.csv</strong><br>
+                            <small>Dataset for analysis - 245 KB</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Work Notes Section -->
+            <div class="form-section">
+                <div class="section-title">Work Notes</div>
+                <div class="work-notes">
+                    <strong>Initial Assignment - June 4, 2025 09:15 AM</strong><br>
+                    Ticket created for fraud detection dashboard development using Splunk Enterprise. All required documentation and dataset provided. Task includes:
+                    <ul>
+                        <li>Splunk Enterprise installation and configuration</li>
+                        <li>Data import and validation (prepared_data.csv)</li>
+                        <li>Dashboard creation with specific fraud analytics</li>
+                        <li>Export and documentation delivery</li>
+                    </ul>
+                    <em>Next: Begin Splunk installation and environment setup.</em>
+                </div>
+            </div>
+            
+            <!-- Resolution Section -->
+            <div class="form-section">
+                <div class="section-title">Resolution</div>
+                <div class="form-row">
+                    <div class="form-group full-width">
+                        <label for="resolution-notes">Resolution Notes</label>
+                        <textarea id="resolution-notes" placeholder="Resolution details will be added upon completion..."></textarea>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
