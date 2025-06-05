@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ServiceNow Incident Form - INC0001234 - RESOLVED</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+        
+        .servicenow-header {
+            background: linear-gradient(135deg, #28a745, #1e7e34);
+            padding: 12px 20px;
+            color: white;
+            border-radius: 6px 6px 0 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .header-title {
+            font-size: 18px;
+            font-weight: 600;
+        }
+        
+        .header-actions {
+            display: flex;
+            gap: 10px;
+        }
+        
+        .btn {
+            padding: 6px 12px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 12px;
+            font-weight: 500;
+        }
+        
+        .btn-primary {
+            background-color: #28a745;
+            color: white;
+        }
+        
+        .btn-secondary {
+            background-color: #6c757d;
+            color: white;
+        }
+        
+        .form-container {
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 0 0 6px 6px;
+            max-width: 1200px;
+            margin: 0 auto;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        
+        .form-section {
+            padding: 20px;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .form-section:last-child {
+            border-bottom: none;
+        }
+        
+        .section-title {
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: 15px;
+            color: #28a745;
+            border-bottom: 2px solid #e0e0e0;
+            padding-bottom: 5px;
+        }
+        
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin-bottom: 15px;
+        }
+        
+        .form-group {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .form-group.full-width {
+            grid-column: 1 / -1;
+        }
+        
+        label {
+            font-weight: 500;
+            margin-bottom: 5px;
+            color: #555;
+        }
+        
+        input, select, textarea {
+            padding: 8px 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 14px;
+            background-color: white;
+        }
+        
+        input:focus, select:focus, textarea:focus {
+            outline: none;
+            border-color: #28a745;
+            box-shadow: 0 0 0 2px rgba(40, 167, 69, 0.2);
+        }
+        
+        .readonly {
+            background-color: #f8f9fa;
+            color: #6c757d;
+        }
+        
+        textarea {
+            min-height: 100px;
+            resize: vertical;
+        }
+        
+        .status-badge {
+            display: inline-block;
+            padding: 4px 8px;
+            border-radius: 12px;
+            font-size: 12px;
+            font-weight: 500;
+            text-transform: uppercase;
+        }
+        
+        .status-resolved {
+            background-color: #d4edda;
+            color: #155724;
+        }
+        
+        .priority-high {
+            background-color: #ffebee;
+            color: #d32f2f;
+        }
+        
+        .attachment-section {
+            background-color: #f8f9fa;
+            padding: 15px;
+            border-radius: 4px;
+            margin-top: 10px;
+        }
+        
+        .attachment-item {
+            display: flex;
+            align-items: center;
+            padding: 8px;
+            background: white;
+            border: 1px solid #dee2e6;
+            border-radius: 4px;
+            margin-bottom: 8px;
+        }
+        
+        .attachment-icon {
+            width: 24px;
+            height: 24px;
+            margin-right: 10px;
+            background-color: #28a745;
+            border-radius: 4px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 12px;
+            font-weight: bold;
+        }
+        
+        .work-notes {
+            background-color: #d4edda;
+            border: 1px solid #c3e6cb;
+            border-radius: 4px;
+            padding: 12px;
+            margin-top: 10px;
+        }
+        
+        .resolution-section {
+            background-color: #e8f5e8;
+            border: 2px solid #28a745;
+            border-radius: 6px;
+            padding: 20px;
+            margin: 20px 0;
+        }
+        
+        .key-findings {
+            background-color: #fff3cd;
+            border: 1px solid #ffeeba;
+            border-radius: 4px;
+            padding: 15px;
+            margin: 15px 0;
+        }
+        
+        .findings-list {
+            margin: 10px 0;
+            padding-left: 20px;
+        }
+        
+        .findings-list li {
+            margin-bottom: 8px;
+            line-height: 1.4;
+        }
+        
+        @media (max-width: 768px) {
+            .form-row {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <div class="servicenow-header">
+            <div class="header-title">Incident INC0001234 - Fraud Detection Dashboard Development - RESOLVED</div>
+            <div class="header-actions">
+                <button class="btn btn-secondary">Print</button>
+                <button class="btn btn-primary">Close</button>
+            </div>
+        </div>
+        
+        <form>
+            <!-- Basic Information Section -->
+            <div class="form-section">
+                <div class="section-title">Incident Details</div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="incident-number">Incident Number</label>
+                        <input type="text" id="incident-number" value="INC0001234" class="readonly" readonly>
+                    </div>
+                    <div class="form-group">
+                        <label for="state">State</label>
+                        <select id="state">
+                            <option>New</option>
+                            <option>In Progress</option>
+                            <option>On Hold</option>
+                            <option selected>Resolved</option>
+                            <option>Closed</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="priority">Priority</label>
+                        <select id="priority">
+                            <option>1 - Critical</option>
+                            <option selected>2 - High</option>
+                            <option>3 - Moderate</option>
+                            <option>4 - Low</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="category">Category</label>
+                        <select id="category">
+                            <option selected>Cybersecurity - Fraud Detection</option>
+                            <option>Software</option>
+                            <option>Hardware</option>
+                            <option>Network</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="subcategory">Subcategory</label>
+                        <input type="text" id="subcategory" value="Data Analysis & Visualization" class="readonly" readonly>
+                    </div>
+                    <div class="form-group">
+                        <label for="urgency">Urgency</label>
+                        <select id="urgency">
+                            <option>1 - High</option>
+                            <option selected>2 - Medium</option>
+                            <option>3 - Low</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Assignment Section -->
+            <div class="form-section">
+                <div class="section-title">Assignment</div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="assigned-to">Assigned to</label>
+                        <input type="text" id="assigned-to" value="Randal - Cybersecurity Data Analyst" class="readonly" readonly>
+                    </div>
+                    <div class="form-group">
+                        <label for="assignment-group">Assignment Group</label>
+                        <input type="text" id="assignment-group" value="Cybersecurity Team" class="readonly" readonly>
+                    </div>
+                </div>
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="caller">Caller</label>
+                        <input type="text" id="caller" value="Commonwealth Bank Fraud Team" class="readonly" readonly>
+                    </div>
+                    <div class="form-group">
+                        <label for="company">Company</label>
+                        <input type="text" id="company" value="Commonwealth Bank" class="readonly" readonly>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Description Section -->
+            <div class="form-section">
+                <div class="section-title">Description</div>
+                <div class="form-row">
+                    <div class="form-group full-width">
+                        <label for="short-description">Short Description</label>
+                        <input type="text" id="short-description" value="Development of Fraud Detection Dashboard using Splunk Enterprise for Transaction Monitoring" class="readonly" readonly>
+                    </div>
+                </div>
+                
+                <div class="form-row">
+                    <div class="form-group full-width">
+                        <label for="description">Description</label>
+                        <textarea id="description" class="readonly" readonly>As part of Commonwealth Bank's ongoing cybersecurity initiatives to combat the increasing rate and complexity of financial fraud, we require the development of a comprehensive fraud detection dashboard. This request stems from the critical need for effective defense solutions to protect our customers, employees, and institutional reputation while enhancing the resilience of our financial system.
+
+The Fraud team has provided a structured dataset containing payment transactions from various customers across different time periods and amounts. This data requires analysis and visualization to identify patterns and trends that can aid in fraud detection and prevention.</textarea>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Dates Section -->
+            <div class="form-section">
+                <div class="section-title">Dates & Timeline</div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="created">Created</label>
+                        <input type="datetime-local" id="created" value="2025-06-04T09:00" class="readonly" readonly>
+                    </div>
+                    <div class="form-group">
+                        <label for="due-date">Due Date</label>
+                        <input type="datetime-local" id="due-date" value="2025-06-18T17:00" class="readonly" readonly>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="resolved-date">Resolved Date</label>
+                        <input type="datetime-local" id="resolved-date" value="2025-06-04T16:30" class="readonly" readonly>
+                    </div>
+                    <div class="form-group">
+                        <label for="resolution-time">Resolution Time</label>
+                        <input type="text" id="resolution-time" value="7.5 hours" class="readonly" readonly>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Attachments Section -->
+            <div class="form-section">
+                <div class="section-title">Attachments</div>
+                <div class="attachment-section">
+                    <div class="attachment-item">
+                        <div class="attachment-icon">PDF</div>
+                        <div>
+                            <strong>Task 1_Data analysis_Dashboard.pdf</strong><br>
+                            <small>Uploaded: June 4, 2025 - 152 KB</small>
+                        </div>
+                    </div>
+                    <div class="attachment-item">
+                        <div class="attachment-icon">PDF</div>
+                        <div>
+                            <strong>Task Guide (2).pdf</strong><br>
+                            <small>Uploaded: June 4, 2025 - 89 KB</small>
+                        </div>
+                    </div>
+                    <div class="attachment-item">
+                        <div class="attachment-icon">CSV</div>
+                        <div>
+                            <strong>prepared_data.csv</strong><br>
+                            <small>Dataset for analysis - 245 KB</small>
+                        </div>
+                    </div>
+                    <div class="attachment-item">
+                        <div class="attachment-icon">PDF</div>
+                        <div>
+                            <strong>fraud_detection_dashboard2-2024-08-06.pdf</strong><br>
+                            <small>Completed Dashboard Export - June 4, 2025 - 890 KB</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Work Notes Section -->
+            <div class="form-section">
+                <div class="section-title">Work Notes</div>
+                <div class="work-notes">
+                    <strong>Initial Assignment - June 4, 2025 09:15 AM</strong><br>
+                    Ticket created for fraud detection dashboard development using Splunk Enterprise. All required documentation and dataset provided.<br><br>
+                    
+                    <strong>Environment Setup - June 4, 2025 10:30 AM</strong><br>
+                    Splunk Enterprise successfully installed and configured. Data validation completed for prepared_data.csv containing transaction records.<br><br>
+                    
+                    <strong>Dashboard Development - June 4, 2025 11:45 AM</strong><br>
+                    Dashboard creation in progress. Implementing comprehensive analytics including transaction categorization, fraud pattern analysis, and demographic breakdowns.<br><br>
+                    
+                    <strong>Analysis Complete - June 4, 2025 15:30 AM</strong><br>
+                    Dashboard completed with 11 comprehensive charts covering all fraud detection requirements. Key insights identified and documented.<br><br>
+                    
+                    <strong>Final Export - June 4, 2025 16:30 PM</strong><br>
+                    Dashboard successfully exported as PDF. All deliverables completed and ready for handover to Commonwealth Bank Fraud Team.
+                </div>
+            </div>
+            
+            <!-- Key Findings Section -->
+            <div class="form-section">
+                <div class="section-title">Key Findings & Analytics</div>
+                <div class="key-findings">
+                    <h4>Fraud Pattern Analysis Results:</h4>
+                    <ul class="findings-list">
+                        <li><strong>Transaction Categories:</strong> Transportation services show highest fraud activity, followed by health services and food/dining establishments</li>
+                        <li><strong>Demographic Patterns:</strong> Age group 1 (19-25 years) represents the highest fraud risk with 38 incidents, followed by age group 2 (26-35 years) with 24 incidents</li>
+                        <li><strong>Gender Distribution:</strong> Female customers show slightly higher fraud vulnerability (52 incidents) compared to male customers (40 incidents)</li>
+                        <li><strong>Merchant Analysis:</strong> Specific high-risk merchants identified including M348934600, M692898500, and M1823072687</li>
+                        <li><strong>Temporal Patterns:</strong> Fraud activity shows concentration in specific time periods (step 54) suggesting seasonal or cyclical patterns</li>
+                        <li><strong>Total Fraud Cases:</strong> 92 confirmed fraudulent transactions identified from the dataset</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Resolution Section -->
+            <div class="form-section">
+                <div class="section-title">Resolution</div>
+                <div class="resolution-section">
+                    <div class="form-row">
+                        <div class="form-group full-width">
+                            <label for="resolution-notes">Resolution Notes</label>
+                            <textarea id="resolution-notes" class="readonly" readonly>TASK COMPLETED SUCCESSFULLY
+
+The fraud detection dashboard has been successfully developed and deployed using Splunk Enterprise. The solution provides comprehensive analytics and visualization capabilities for Commonwealth Bank's fraud detection requirements.
+
+DELIVERABLES COMPLETED:
+1. Splunk Enterprise Installation & Configuration
+   - Successfully installed and configured Splunk Enterprise environment
+   - Imported and validated prepared_data.csv (245KB dataset)
+   - Configured data models and search optimization
+
+2. Comprehensive Dashboard Creation (11 Charts):
+   - Chart 1: Transaction Count by Category (identifying high-risk service areas)
+   - Chart 2: Fraudulent vs. Legitimate Payment Distribution
+   - Chart 3: Customer Age Distribution Analysis
+   - Chart 4: Merchant Risk Assessment
+   - Chart 5: Fraudulent Transactions by Age (Tabular)
+   - Chart 6: Fraudulent Transactions by Age (Visual)
+   - Chart 7: Fraud Distribution by Service Category
+   - Chart 8: Temporal Fraud Pattern Analysis
+   - Chart 9: Gender-based Fraud Distribution
+   - Chart 10: Female Customer Fraud by Category
+   - Chart 11: High-Risk Age Group by Merchant
+
+3. Key Insights & Recommendations:
+   - Transportation and health services require enhanced monitoring
+   - Young adults (19-25) represent highest risk demographic
+   - Specific merchants flagged for additional scrutiny
+   - Gender-specific fraud patterns identified for targeted prevention
+
+4. Export & Documentation:
+   - Dashboard exported as PDF (fraud_detection_dashboard2-2024-08-06.pdf)
+   - All visualizations optimized for executive reporting
+   - Data-driven insights ready for implementation
+
+IMPACT:
+This dashboard provides Commonwealth Bank with actionable intelligence to:
+- Proactively identify high-risk transactions
+- Implement targeted fraud prevention measures
+- Optimize resource allocation for fraud investigation
+- Enhance customer protection and institutional security
+
+The solution is ready for immediate deployment and integration into existing fraud detection workflows. All objectives outlined in the original request have been met within the specified timeline.
+
+NEXT STEPS:
+- Dashboard handover to Commonwealth Bank Fraud Team
+- Training session scheduling (if required)
+- Integration with existing fraud detection systems
+- Ongoing monitoring and optimization recommendations
+
+Resolution Status: COMPLETED
+Quality Assurance: PASSED
+Client Satisfaction: PENDING FEEDBACK</textarea>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
