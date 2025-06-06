@@ -225,8 +225,8 @@ and temporal data to identify high-risk fraud indicators and enhance the bank's 
 ## Quick Navigation
 
 - [📁 Project Files](#project-files)
-- [🎫 Original ServiceNow Ticket](./servicenow_form_template.html) - View initial requirements
-- [✅ Resolved ServiceNow Ticket](./servicenow_ticket_resolved.html) - View completion details
+- [🎫 Original ServiceNow Ticket](https://quinnran76.github.io/Cybersecurity-Portfolio/servicenow_ticket_index.html) - View initial requirements
+- [✅ Resolved ServiceNow Ticket](https://quinnran76.github.io/Cybersecurity-Portfolio/servicenow_resolved_index.html) - View completion details
 - [📊 Dashboard Results](./fraud_detection_dashboard2-2024-08-06.pdf) - View exported dashboard
 
 ## Project Files
