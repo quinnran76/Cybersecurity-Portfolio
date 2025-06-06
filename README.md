@@ -52,48 +52,48 @@ This project simulates an enterprise deployment of Active Directory and SCCM on 
 - CMTrace Log Viewer
 ```
 ## Active Directory + SCCM Lab Screenshots
+
 ### Logical Topology Diagram
-![image alt](https://github.com/quinnran76/Cybersecurity-Portfolio/blob/8a0096d6e7097a186cb0a4896476a8875061f02d/Diagrams/Screenshot%202025-06-03%20163246.png)
+<img src="Diagrams/Screenshot%202025-06-03%20163246.png" alt="Logical Topology Diagram">
 
 ### AD OU Structure
-![image alt](https://github.com/quinnran76/Cybersecurity-Portfolio/blob/734d74cd19a7e7e57d795a2808ff3971dd42b1c2/ActiveDirectory-SCCM/Screenshot%202025-05-26%20184750.png)
+<img src="ActiveDirectory-SCCM/Screenshot%202025-05-26%20184750.png" alt="AD OU Structure">
 
 ### AD Schema Extended
-![image alt](https://github.com/quinnran76/Cybersecurity-Portfolio/blob/41cb09557db4884718b628ddbfe8f0ab33972c61/ActiveDirectory-SCCM/Screenshot%202025-06-03%20143000.png)
+<img src="ActiveDirectory-SCCM/Screenshot%202025-06-03%20143000.png" alt="AD Schema Extended">
 
 ### GPO Management
-![image alt](https://github.com/quinnran76/Cybersecurity-Portfolio/blob/6e90bd22bdb529e1fa32a2ebf749854a1a4f665e/ActiveDirectory-SCCM/Screenshot%202025-05-26%20190028.png)
+<img src="ActiveDirectory-SCCM/Screenshot%202025-05-26%20190028.png" alt="GPO Management">
 
 ### DNS Manager
-![image alt](https://github.com/quinnran76/Cybersecurity-Portfolio/blob/5f85c18c34bc8a210704046ee584f25d62fbb2c3/ActiveDirectory-SCCM/Screenshot%202025-05-26%20185914.png)
+<img src="ActiveDirectory-SCCM/Screenshot%202025-05-26%20185914.png" alt="DNS Manager">
 
 ### DHCP Scope
-![image alt](https://github.com/quinnran76/Cybersecurity-Portfolio/blob/5f85c18c34bc8a210704046ee584f25d62fbb2c3/ActiveDirectory-SCCM/Screenshot%202025-05-26%20185636.png)
+<img src="ActiveDirectory-SCCM/Screenshot%202025-05-26%20185636.png" alt="DHCP Scope">
 
 ### VM's Joined to the Domain
-![image alt](https://github.com/quinnran76/Cybersecurity-Portfolio/blob/e9c62845e2f2dd164a181d0937384b42f8f3ceed/ActiveDirectory-SCCM/Screenshot%202025-06-03%20152510.png)
-![image alt](https://github.com/quinnran76/Cybersecurity-Portfolio/blob/e9c62845e2f2dd164a181d0937384b42f8f3ceed/ActiveDirectory-SCCM/Screenshot%202025-06-03%20152554.png)
+<img src="ActiveDirectory-SCCM/Screenshot%202025-06-03%20152510.png" alt="VM Joined 1">
+<img src="ActiveDirectory-SCCM/Screenshot%202025-06-03%20152554.png" alt="VM Joined 2">
 
 ### SCCM - Configuration Manager Console
-![image alt](https://github.com/quinnran76/Cybersecurity-Portfolio/blob/f790e934d81da5bafaf04970a6e0c2f4ce0fdf05/ActiveDirectory-SCCM/Screenshot%202025-05-26%20191004.png)
+<img src="ActiveDirectory-SCCM/Screenshot%202025-05-26%20191004.png" alt="SCCM Console">
 
 ### SQL Server
-![image alt](https://github.com/quinnran76/Cybersecurity-Portfolio/blob/de6485b5246e06cd83c9c98635ba598c0a85ae57/ActiveDirectory-SCCM/Screenshot%202025-05-26%20191310.md.png)
-![image alt](https://github.com/quinnran76/Cybersecurity-Portfolio/blob/de6485b5246e06cd83c9c98635ba598c0a85ae57/ActiveDirectory-SCCM/Screenshot%202025-05-26%20191350.md.png)
+<img src="ActiveDirectory-SCCM/Screenshot%202025-05-26%20191310.md.png" alt="SQL Server 1">
+<img src="ActiveDirectory-SCCM/Screenshot%202025-05-26%20191350.md.png" alt="SQL Server 2">
 
 ### SSRS
-![image alt](https://github.com/quinnran76/Cybersecurity-Portfolio/blob/734d74cd19a7e7e57d795a2808ff3971dd42b1c2/ActiveDirectory-SCCM/Screenshot%202025-05-26%20191454.png)
+<img src="ActiveDirectory-SCCM/Screenshot%202025-05-26%20191454.png" alt="SSRS">
 
 ### Deployment Verified
-![image alt](https://github.com/quinnran76/Cybersecurity-Portfolio/blob/29cc1fd713b828d939022db7b9161a95f3583d7e/ActiveDirectory-SCCM/Screenshot%202025-05-26%20191210.png)
-![image alt](https://github.com/quinnran76/Cybersecurity-Portfolio/blob/734d74cd19a7e7e57d795a2808ff3971dd42b1c2/ActiveDirectory-SCCM/Screenshot%202025-05-26%20193526.png)
-![image alt](https://github.com/quinnran76/Cybersecurity-Portfolio/blob/734d74cd19a7e7e57d795a2808ff3971dd42b1c2/ActiveDirectory-SCCM/Screenshot%202025-05-26%20192823.png)
-![image alt](https://github.com/quinnran76/Cybersecurity-Portfolio/blob/734d74cd19a7e7e57d795a2808ff3971dd42b1c2/ActiveDirectory-SCCM/Screenshot%202025-05-26%20192921.png)
+<img src="ActiveDirectory-SCCM/Screenshot%202025-05-26%20191210.png" alt="Deployment Verified 1">
+<img src="ActiveDirectory-SCCM/Screenshot%202025-05-26%20193526.png" alt="Deployment Verified 2">
+<img src="ActiveDirectory-SCCM/Screenshot%202025-05-26%20192823.png" alt="Deployment Verified 3">
+<img src="ActiveDirectory-SCCM/Screenshot%202025-05-26%20192921.png" alt="Deployment Verified 4">
 
 ### CMTrace Log Viewer
-![image alt](https://github.com/quinnran76/Cybersecurity-Portfolio/blob/734d74cd19a7e7e57d795a2808ff3971dd42b1c2/ActiveDirectory-SCCM/Screenshot%202025-05-26%20191549.png)
-![image alt](https://github.com/quinnran76/Cybersecurity-Portfolio/blob/734d74cd19a7e7e57d795a2808ff3971dd42b1c2/ActiveDirectory-SCCM/Screenshot%202025-05-26%20193722.png)
-
+<img src="ActiveDirectory-SCCM/Screenshot%202025-05-26%20191549.png" alt="CMTrace Log Viewer 1">
+<img src="ActiveDirectory-SCCM/Screenshot%202025-05-26%20193722.png" alt="CMTrace Log Viewer 2">
 
 
 
