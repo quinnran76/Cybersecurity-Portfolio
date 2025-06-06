@@ -121,8 +121,8 @@ and temporal data to identify high-risk fraud indicators and enhance the bank's 
 
 | Ticket Status | Description | Link |
 |---------------|-------------|------|
-| **Original Ticket** | Initial incident creation and requirements (INC0001234) | [🎫 View ServiceNow Ticket (rendered HTML)](https://quinnran76.github.io/Cybersecurity-Portfolio/servicenow_ticket_index.html)) |
-| **Resolved Ticket** | Completed resolution with deliverables | [✅ View Resolved ServiceNow Ticket (rendered HTML)](https://quinnran76.github.io/Cybersecurity-Portfolio/servicenow_resolved_index.html)) |
+| **Original Ticket** | Initial incident creation and requirements (INC0001234) | [🎫 View ServiceNow Ticket](https://quinnran76.github.io/Cybersecurity-Portfolio/servicenow_ticket_index.html) |
+| **Resolved Ticket** | Completed resolution with deliverables | [✅ View Resolved ServiceNow Ticket](https://quinnran76.github.io/Cybersecurity-Portfolio/servicenow_resolved_index.html) |
 
 **Incident Details:**
 - **Ticket ID:** INC0001234
