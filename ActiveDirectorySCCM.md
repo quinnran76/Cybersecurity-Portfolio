@@ -1,4 +1,4 @@
-# Randal Quinn – Active Directory + SCCM Lab Lab Portfolio
+# Randal Quinn – Active Directory + SCCM Lab Portfolio
 
 <p align="center">
   <img src="https://img.shields.io/badge/Windows_Server_2022-0078D4?logo=windows&logoColor=white&style=for-the-badge" />
@@ -97,7 +97,7 @@ This project simulates an enterprise deployment of Active Directory and SCCM on 
 
 
 ---
-[← Back to Main README](../SecurityEngineering_MyPracticalJourney.md)
+[← Back to Main README](SecurityEngineering_MyPracticalJourney.md)
 ---
 
 ## 🧰 Tools & Technologies Used
