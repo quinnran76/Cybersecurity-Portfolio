@@ -39,6 +39,14 @@ Each repository will contain:
 - Practical examples from lab exercises
 - Personal project demonstrations
 
+# My Projects
+Welcome to My Projects! These README links point to more detailed documentation:
+
+- [Active Directory + SCCM Lab](README.md)
+- [Splunk Fraud Detection Dashboard](SplunkFraudDetectionDashboard.md)
+- [Incident Response-Phishing](IncidentResponse-Phishing.md)
+- [Brute-Force Detection Project](Brute-ForceDetectionProject.md)
+
 ## Objectives
 
 1. Create a comprehensive learning journal
