@@ -42,7 +42,7 @@ Each repository will contain:
 # My Projects
 Welcome to My Projects! These README links point to more detailed documentation:
 
-- [Active Directory + SCCM Lab](README.md)
+- [Active Directory + SCCM Lab](ActiveDirectorySCCM.md)
 - [Splunk Fraud Detection Dashboard](SplunkFraudDetectionDashboard.md)
 - [Incident Response-Phishing](IncidentResponse-Phishing.md)
 - [Brute-Force Detection Project](Brute-ForceDetectionProject.md)
