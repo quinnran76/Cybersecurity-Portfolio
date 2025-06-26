@@ -8,7 +8,7 @@
   <img src="https://img.shields.io/badge/Splunk_Enterprise-008000?logo=splunk&logoColor=white&style=for-the-badge" />
 </p>
 
-This repository showcases my hands-on lab project to design and build the enterprise envionment foundation. The purpose is to expand this environment and demonstrate core competencies in enterprise security tools, data analysis, and threat response for later Security Analyst projects.
+This repository showcases my hands-on lab project to design and build the enterprise environment foundation. The purpose is to expand this environment and demonstrate core competencies in enterprise security tools, data analysis, and threat response for later Security Analyst projects.
 
 ---
 
