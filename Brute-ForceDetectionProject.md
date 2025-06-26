@@ -20,7 +20,7 @@ The Brute-Force Detection Lab project aimed to establish a controlled environmen
 
 ### Tools Used
 
--![Splunk Enterprise](https://img.shields.io/badge/Splunk_Enterprise-000000?style=for-the-badge&logo=splunk&logoColor=white)
+-![Splunk Enterprise](https://img.shields.io/badge/Splunk_Enterprise-008000?style=for-the-badge&logo=splunk&logoColor=white)
 -![Kali Linux](https://img.shields.io/badge/Kali_Linux-557C94?style=for-the-badge&logo=kali-linux&logoColor=white)
 -![Atomic Red Team](https://img.shields.io/badge/Atomic_Red_Team-B22222?style=for-the-badge&logo=atom&logoColor=white)
 -![Sysinternals](https://img.shields.io/badge/Sysinternals-0078D4?style=for-the-badge&logo=microsoft&logoColor=white)
