@@ -96,7 +96,8 @@ This project simulates an enterprise deployment of Active Directory and SCCM on 
 <img src="ActiveDirectory-SCCM/Screenshot%202025-05-26%20193722.png" alt="CMTrace Log Viewer 2">
 
 
-
+---
+[← Back to Main README](../SecurityEngineering_MyPracticalJourney.md)
 
 ### 2. Splunk Fraud Detection Dashboard
 - Used Splunk Enterprise on Ubuntu to ingest and visualize financial transaction data
