@@ -1,4 +1,4 @@
-# Randal Quinn – Cybersecurity Analyst Lab Portfolio
+# Randal Quinn – Active Directory + SCCM Lab Lab Portfolio
 
 <p align="center">
   <img src="https://img.shields.io/badge/Splunk_Enterprise-008000?logo=splunk&logoColor=white&style=for-the-badge" />
@@ -8,11 +8,11 @@
   <img src="https://img.shields.io/badge/PowerShell-012456?logo=powershell&logoColor=white&style=for-the-badge" />
 </p>
 
-This repository showcases my hands-on cybersecurity lab projects, incident response simulations, and Splunk analytics dashboards. The purpose is to demonstrate core competencies in enterprise security tools, data analysis, and threat response.
+This repository showcases my hands-on lab project to design and build the enterprise envionment foundation. The purpose is to expand this environment and demonstrate core competencies in enterprise security tools, data analysis, and threat response for later Security Analyst projects.
 
 ---
 
-## 🔐 Projects Included
+## 🔐 Project Includes
 
 ### 1. Active Directory + SCCM Lab
 - Built a domain controller with Windows Server 2022
