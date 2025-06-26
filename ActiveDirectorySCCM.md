@@ -97,7 +97,7 @@ This project simulates an enterprise deployment of Active Directory and SCCM on 
 
 
 ---
-[← Back to Main README](SecurityEngineering_MyPracticalJourney.md)
+[← Back to Main README](README.md)
 ---
 
 ## 🧰 Tools & Technologies Used
