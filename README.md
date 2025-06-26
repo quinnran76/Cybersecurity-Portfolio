@@ -98,30 +98,6 @@ This project simulates an enterprise deployment of Active Directory and SCCM on 
 
 ---
 [← Back to Main README](../SecurityEngineering_MyPracticalJourney.md)
-
-
-### Scripts and Automation (Optional/Future Additions)
-- Collection of PowerShell or Bash scripts used in lab automation or data forwarding
-
-📁 Folder: `/Scripts/`
-
-#### `/Scripts/README.md`
-```markdown
-# Custom Scripts
-
-This folder contains PowerShell and Bash scripts used during the cybersecurity lab deployments and automation.
-
-## Contents
-- `deploy-gpo.ps1` – Sample script to apply GPO policies
-- `install-sysmon.ps1` – Automates Sysmon installation and config
-
-## Screenshot Examples
-![Sysmon Config Script](images/sysmon-script.png)
-
-## Usage
-Scripts are documented with comments. Please modify as needed for your lab environment.
-```
-
 ---
 
 ## 🧰 Tools & Technologies Used
