@@ -32,4 +32,4 @@ This case study walks through a simulated phishing attack and details a complete
 - Need for layered email filtering and MFA
 ```
 ---
-[← Back to Main README](../SecurityEngineering_MyPracticalJourney.md)
+[← Back to Main README](README.md)
