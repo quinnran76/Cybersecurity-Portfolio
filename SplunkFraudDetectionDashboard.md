@@ -92,7 +92,7 @@ A comprehensive fraud detection dashboard built with Splunk Enterprise to analyz
 4. Gender-aware fraud detection algorithms
 
 ## Project Files
-- [📊 Dashboard Results](Data-Analysis/FraudDetection.html) - Exported dashboard
+- [📊 Dashboard Results](https://quinnran76.github.io/Cybersecurity-Portfolio/Data-Analysis/FraudDetection.html) - Exported dashboard
 - `prepared_data.csv` - Analysis dataset
 - `Task 1_Data analysis_Dashboard.pdf` - Project requirements
 
