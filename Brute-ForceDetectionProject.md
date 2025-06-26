@@ -97,7 +97,7 @@ Example(s) below.
 ![Screenshot 2024-05-23 193155](https://github.com/quinnran76/Security-Engineering-Labs/assets/58571908/bb5d1fb9-47f8-45d5-9e23-5acf43aa96a5)
 
 ---
-[← Back to Main README](../SecurityEngineering_MyPracticalJourney.md)
+[← Back to Main README](README.md)
 
 
 
