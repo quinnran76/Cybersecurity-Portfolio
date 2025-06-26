@@ -17,9 +17,9 @@ My approach to learning is fourfold:
 3. **Discipline**: Maintaining a rigorous practice schedule and pushing through challenges to accelerate skill acquisition and deepen understanding.
 4. **Structure**: Utilizing the comprehensive "TryHackMe" learning path to develop skills systematically and effectively.
 
-## Project Summary
+## Portfolio Summary
 
-This GitHub portfolio project aims to document my progression from an aspiring Cyber Security Engineer to a skilled professional ready to tackle real-world challenges. Through a series of carefully crafted repositories, I'll demonstrate my growing proficiency in key areas of cybersecurity.
+This GitHub portfolio consists of projects that aim to document my progression from an aspiring Cyber Security Engineer to a skilled professional ready to tackle real-world challenges. Through a series of carefully crafted repositories, I'll demonstrate my growing proficiency in key areas of cybersecurity.
 
 ### Focus Areas
 
@@ -56,7 +56,7 @@ Welcome to My Projects! These README links point to more detailed documentation:
 
 ## Conclusion
 
-By combining my dedication to learning with this structured approach to skill demonstration, I'm positioning myself for success in the lucrative and dynamic field of cybersecurity. This project represents my commitment to continuous improvement and my readiness to contribute meaningfully to the security landscape of tomorrow.
+By combining my dedication to learning with this structured approach to skill demonstration, I'm positioning myself for success in the lucrative and dynamic field of cybersecurity. These projects represents my commitment to continuous improvement and my readiness to contribute meaningfully to the security landscape of tomorrow.
 
 ---
 
