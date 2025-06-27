@@ -108,7 +108,7 @@ A comprehensive fraud detection dashboard built with Splunk Enterprise to analyz
 ## Project Files
 - [📊 Dashboard Results](https://quinnran76.github.io/Cybersecurity-Portfolio/Data-Analysis/fraud_detection_dashboard2-2024-08-06.pdf) - Exported Dashboard
 - [`prepared_data.csv`](https://quinnran76.github.io/Cybersecurity-Portfolio/Data-Analysis/prepared_data.csv) - Data-Analysis
-- [`View Task1_Data analysis.pdf`](https://github.com/quinnran76/Cybersecurity-Portfolio/raw/main/Data-Analysis/Task1_Data%20analysis.pdf) - Project Requirements
+- ['View Task1_Data analysis.pdf in browser'](https://docs.google.com/viewer?url=https://github.com/quinnran76/Cybersecurity-Portfolio/raw/main/Data-Analysis/Task1_Data%20analysis.pdf) - Project Requirements
 
 ---
 
