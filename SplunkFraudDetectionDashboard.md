@@ -78,6 +78,13 @@ A comprehensive fraud detection dashboard built with Splunk Enterprise to analyz
 9. **Gender-Based Fraud Distribution**
 10. **Female Customer Fraud Patterns by Category**
 11. **High-Risk Age Groups by Merchant Analysis**
+- **Screenshots of Splunk Queries and Dashboard Visuals**
+<img src="Data-Analysis/Screenshot 2025-06-08 113643.png" alt="Top Category">
+<img src="Data-Analysis/Screenshot 2025-06-09 165259.png" alt="Count By Category">
+<img src="Data-Analysis/Screenshot 2025-06-09 165759.png" alt="Count By Category Graph">
+<img src="Data-Analysis/Screenshot 2025-06-09 170245.png" alt="Count By Fraud">
+<img src="Data-Analysis/Screenshot 2025-06-09 170350.png" alt="Count By Fraud Graph">
+<img src="Data-Analysis/Screenshot 2025-06-09 170545.png" alt="Count By Merchant">
 
 ## Technical Implementation
 - **Platform:** Splunk Enterprise on Ubuntu
