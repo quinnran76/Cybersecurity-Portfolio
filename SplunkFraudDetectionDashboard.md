@@ -78,7 +78,8 @@ A comprehensive fraud detection dashboard built with Splunk Enterprise to analyz
 9. **Gender-Based Fraud Distribution**
 10. **Female Customer Fraud Patterns by Category**
 11. **High-Risk Age Groups by Merchant Analysis**
-- **Screenshots of Splunk Queries and Dashboard Visuals**
+
+***Screenshots of Splunk Queries and Dashboard Visuals***
 <img src="Data-Analysis/Screenshot 2025-06-08 113643.png" alt="Top Category">
 <img src="Data-Analysis/Screenshot 2025-06-09 165259.png" alt="Count By Category">
 <img src="Data-Analysis/Screenshot 2025-06-09 165759.png" alt="Count By Category Graph">
@@ -106,8 +107,8 @@ A comprehensive fraud detection dashboard built with Splunk Enterprise to analyz
 
 ## Project Files
 - [📊 Dashboard Results](https://quinnran76.github.io/Cybersecurity-Portfolio/Data-Analysis/fraud_detection_dashboard2-2024-08-06.pdf) - Exported dashboard
-- `prepared_data.csv` - Analysis dataset
-- `Task 1_Data analysis_Dashboard.pdf` - Project requirements
+- [`prepared_data.csv` -](https://quinnran76.github.io/Cybersecurity-Portfolio/Data-Analysis/prepared_data.csv) - Data-Analysis
+- [`Task 1_Data analysis_Dashboard.pdf`-](https://quinnran76.github.io/Cybersecurity-Portfolio/Data-Analysis) - Project requirements
 
 ---
 
