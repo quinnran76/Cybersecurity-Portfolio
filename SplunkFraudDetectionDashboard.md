@@ -18,7 +18,7 @@ and temporal data to identify high-risk fraud indicators and enhance the bank's 
 **Project managed through ServiceNow Incident Management System**
 ```
 # Splunk Fraud Detection Dashboard
-
+<img src="Data-Analysis/Screenshot 2025-06-14 212543.png" alt="Splunk Enterprise">
 ## Overview
 A comprehensive fraud detection dashboard built with Splunk Enterprise to analyze Commonwealth Bank transaction data and identify fraudulent patterns across customer demographics and transaction categories.
 
@@ -38,7 +38,13 @@ A comprehensive fraud detection dashboard built with Splunk Enterprise to analyz
 - **Analysis Period:** 4 months (May - August)
 - **Demographics:** Age groups 0-5, Gender (M/F)
 - **Transaction Data:** Merchant IDs, categories, amounts, fraud indicators
-
+- **Screenshots below show how the dataset was uploaded and piped into Splunk:**
+<img src="Data-Analysis/Screenshot 2025-06-07 155759.png" alt="Prepared_data">
+<img src="Data-Analysis/Screenshot 2025-06-06 142753.png" alt="Set Source Type">
+<img src="Data-Analysis/Screenshot 2025-06-06 142955.png" alt="Save Source Type">
+<img src="Data-Analysis/Screenshot 2025-06-06 143052.png" alt="Input Review">
+<img src="Data-Analysis/Screenshot 2025-06-06 143209.png" alt="Start Search">
+<img src="Data-Analysis/Screenshot 2025-06-06 143316.png" alt="Search Source">
 ## Dashboard Results
 
 ### Key Findings
