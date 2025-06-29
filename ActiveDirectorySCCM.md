@@ -8,106 +8,97 @@
   <img src="https://img.shields.io/badge/Splunk_Enterprise-008000?logo=splunk&logoColor=white&style=for-the-badge" />
 </p>
 
-This repository showcases my hands-on lab project to design and build the enterprise environment foundation. The purpose is to expand this environment and demonstrate core competencies in enterprise security tools, data analysis, and threat response for later Security Analyst projects.
+This repository showcases my hands-on lab project simulating an enterprise-level deployment of Active Directory and System Center Configuration Manager (SCCM) in a virtualized environment using VMware Workstation, designed as a foundational platform to demonstrate core competencies in enterprise security tools, data analysis, and threat response in future Security Analyst projects.
+
 
 ---
 
-## 🔐 Project Includes
+## Project Folder
 
-### 1. Active Directory + SCCM Lab
-- Built a domain controller with Windows Server 2022
-- Installed and configured SCCM (Configuration Manager) with SQL Server and SSRS
-- Created OUs, GPOs, domain users, and deployed SCCM clients via GPO
-- Extended AD Schema and monitored SCCM logs using CMTrace
-
-📁 Folder: `/ActiveDirectory-SCCM/`
-
-#### `/ActiveDirectory-SCCM/README.md`
-```markdown
-# Active Directory + SCCM Lab Setup
+`/ActiveDirectory-SCCM/`
 
 ## Overview
-This project simulates an enterprise deployment of Active Directory and SCCM on a virtual network.
 
-## Key Components
-- Windows Server 2022 Domain Controller
-- Windows Server 2022 SCCM Server
-- Windows 11 Workstation
+The lab environment includes:
+
+- A Domain Controller running Windows Server 2022 with Active Directory, DNS, and DHCP
+- A separate SCCM Server with SQL Server and SSRS installed
+- A Windows 11 workstation joined to the domain
+
+## Tools and Technologies
+
+- VMware Workstation 17 Pro  
+- Windows Server 2022  
+- Windows 11  
+- SQL Server + SSRS  
+- Microsoft Endpoint Configuration Manager (SCCM)  
+- CMTrace Log Viewer  
 
 ## Setup Steps
-1. Configure static IPs on each VM.
-2. Install and configure Active Directory, DNS, DHCP.
-3. Join all VMs to the domain.
-4. Install SQL Server, SSRS, and SCCM.
-5. Extend AD Schema and deploy clients.
-6. Verify deployment via Configuration Manager Console.
 
-## Screenshot Examples Below
-![Logical Topology Diagram] ![AD OU Structure] ![AD Schema Extended]
-![GPO Management]![DNS Manager] ![DHCP Scope] ![VM's Joined Domain]
-![SCCM Console] ![SQL Server] ![SSRS] ![Deployment Verified] ![CMTRace Log Viewer]
+1. [Configure static IP addresses on all virtual machines](#logical-topology-diagram)
+2. [Install and configure Active Directory, DNS, and DHCP roles](#dns-configuration)
+3. [Join all VMs to the domain](#domain-membership-verification)
+4. [Install SQL Server, SSRS, and SCCM](#sql-server-and-ssrs-interface)
+5. [Extend the Active Directory schema to support SCCM](#active-directory-schema-extension)
+6. [Create OUs, GPOs, and domain users](#active-directory-ou-structure)
+7. [Deploy SCCM clients using Group Policy](#gpo-management)
+8. [Verify client deployment using SCCM Console and CMTrace](#deployment-verification)
 
-## Tools Used
-- VMware Workstation 17 Pro
-- CMTrace Log Viewer
-```
-## Active Directory + SCCM Lab Screenshots
+## Screenshot Examples
 
 ### Logical Topology Diagram
 <img src="Diagrams/Screenshot%202025-06-03%20163246.png" alt="Logical Topology Diagram">
 
-### AD OU Structure
+### Active Directory OU Structure
 <img src="ActiveDirectory-SCCM/Screenshot%202025-05-26%20184750.png" alt="AD OU Structure">
 
-### AD Schema Extended
+### Active Directory Schema Extension
 <img src="ActiveDirectory-SCCM/Screenshot%202025-06-03%20143000.png" alt="AD Schema Extended">
 
 ### GPO Management
 <img src="ActiveDirectory-SCCM/Screenshot%202025-05-26%20190028.png" alt="GPO Management">
 
-### DNS Manager
+### DNS Configuration
 <img src="ActiveDirectory-SCCM/Screenshot%202025-05-26%20185914.png" alt="DNS Manager">
 
-### DHCP Scope
+### DHCP Scope Settings
 <img src="ActiveDirectory-SCCM/Screenshot%202025-05-26%20185636.png" alt="DHCP Scope">
 
-### VM's Joined to the Domain
+### Domain Membership Verification
 <img src="ActiveDirectory-SCCM/Screenshot%202025-06-03%20152510.png" alt="VM Joined 1">
 <img src="ActiveDirectory-SCCM/Screenshot%202025-06-03%20152554.png" alt="VM Joined 2">
 
-### SCCM - Configuration Manager Console
+### SCCM Console View
 <img src="ActiveDirectory-SCCM/Screenshot%202025-05-26%20191004.png" alt="SCCM Console">
 
-### SQL Server
+### SQL Server and SSRS Interface
 <img src="ActiveDirectory-SCCM/Screenshot%202025-05-26%20191310.md.png" alt="SQL Server 1">
 <img src="ActiveDirectory-SCCM/Screenshot%202025-05-26%20191350.md.png" alt="SQL Server 2">
-
-### SSRS
 <img src="ActiveDirectory-SCCM/Screenshot%202025-05-26%20191454.png" alt="SSRS">
 
-### Deployment Verified
+### Deployment Verification
 <img src="ActiveDirectory-SCCM/Screenshot%202025-05-26%20191210.png" alt="Deployment Verified 1">
 <img src="ActiveDirectory-SCCM/Screenshot%202025-05-26%20193526.png" alt="Deployment Verified 2">
 <img src="ActiveDirectory-SCCM/Screenshot%202025-05-26%20192823.png" alt="Deployment Verified 3">
 <img src="ActiveDirectory-SCCM/Screenshot%202025-05-26%20192921.png" alt="Deployment Verified 4">
 
-### CMTrace Log Viewer
+### CMTrace Log Output
 <img src="ActiveDirectory-SCCM/Screenshot%202025-05-26%20191549.png" alt="CMTrace Log Viewer 1">
 <img src="ActiveDirectory-SCCM/Screenshot%202025-05-26%20193722.png" alt="CMTrace Log Viewer 2">
 
+> Screenshots are stored in the `/ActiveDirectory-
 
 ---
 [← Back to Main README](README.md)
 ---
 
-## 🧰 Tools & Technologies Used
-- Windows Server 2022
-- SCCM Configuration Manager 2203 & 2303
-- Splunk Enterprise + Universal Forwarder
-- Ubuntu Server 24.04
-- Group Policy, Sysmon, CMTrace
-- VMware Workstation 17 Pro
-- PowerShell, Bash
+## Key Accomplishments
+
+- Extended the Active Directory schema for SCCM integration  
+- Used GPO to deploy SCCM clients across domain-joined machines  
+- Verified SCCM functionality through logs, reports, and console access  
+- Created a modular and scalable lab for enterprise systems testing
 
 ---
 
